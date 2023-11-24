@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Prediction App</title>
+    <style>
+        body {
+            background-color:coral;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333333; 
+        }
+
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #333333;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Situation Prediction</h1>
+    <p>Welcome to our Traffic Situation Prediction App! Use this intuitive tool to anticipate and analyze traffic conditions for better planning and decision-making. Enter relevant data such as date, day of the week, vehicle counts, and time details, and let our machine learning model predict the traffic situation for you. Whether it's a low-traffic day or you should expect normal, high, or very high traffic, our app provides valuable insights to help you navigate your journey efficiently. Try it out now and stay ahead of your travel plans!</p>
+    <form method="post" action="/predict">
+        <label for="field_1">Day of the week:</label>
+        <input type="number" name="field_1" required><br>
+
+        <label for="field_2">Car Count:</label>
+        <input type="number" name="field_2" required><br>
+
+        <label for="field_3">Bike Count:</label>
+        <input type="number" name="field_3" required><br>
+
+        <label for="field_4">Bus Count:</label>
+        <input type="number" name="field_4" required><br>
+
+        <label for="field_5">Truck Count:</label>
+        <input type="number" name="field_5" required><br>
+
+        <label for="field_6">Total Vehicle:</label>
+        <input type="number" name="field_6" required><br>
+
+        <label for="field_7">Hour:</label>
+        <input type="number" name="field_7" required><br>
+
+        <label for="field_8">Minute:</label>
+        <input type="number" name="field_8" required><br>
+
+        <label for="field_9">Second:</label>
+        <input type="number" name="field_9" required><br>
+
+        <label for="field_10">AM/PM:</label>
+        <input type="number" name="field_10" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
+

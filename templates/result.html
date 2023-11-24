@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: coral;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 80%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        p {
+            text-align: center;
+            color: #555555;
+            font-size: 18px;
+        }
+
+        .prediction-value {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        img {
+            display: inline;
+            width: 50%;
+            height: 50%;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Predicted Result of Traffic:</h1>
+        <p><span class="prediction-value">{{ prediction }}</span></p>
+        {% if image_base64_1 %}
+            <img src="{{ url_for('static', filename='user_data_visualization_1.png') }}" alt="User Data Visualization 1">
+        {% endif %}
+        {% if image_base64_2 %}
+            <img src="{{ url_for('static', filename='user_data_visualization_2.png') }}" alt="User Data Visualization 2">
+        {% endif %}
+    </div>
+</body>
+</html>
+
