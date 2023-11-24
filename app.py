@@ -51,8 +51,8 @@ class_to_situation = {
 }
 
 # AWS S3 configuration
-AWS_ACCESS_KEY = 'AKIA47TNT4PF4SUNAEY3'
-AWS_SECRET_KEY = '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'
+AWS_ACCESS_KEY = ''
+AWS_SECRET_KEY = ''
 S3_BUCKET = 'week-12-user-data'
 S3_REGION = 'us-east-1'
 
